@@ -12,6 +12,13 @@ paths:
       operationId: getPosts
       security:
         - BearerAuth: []
+      parameters:
+        - in: query
+          name: page
+          schema:
+            type: integer
+            minimum: 1
+          description: page number
       responses:
         '200':
           description: A list of posts for the authenticated user

@@ -74,3 +74,5 @@ end
 gem 'devise'
 gem 'rswag-api'
 gem 'rswag-ui'
+
+gem "pagy", "~> 6.0"

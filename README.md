@@ -9,6 +9,9 @@ curl -v -X GET localhost:3000/api/v1/home/index.json -H "Authorization: Bearer M
 # posts#index
 curl -X GET localhost:3000/api/v1/posts.json -H "Authorization: Bearer MySecretApiToken"
 
+# posts#index with pagination
+curl -X GET localhost:3000/api/v1/posts.json?page=2 -H "Authorization: Bearer MySecretApiToken"
+
 # posts#show 
 curl -X GET localhost:3000/api/v1/posts/1.json -H "Authorization: Bearer MySecretApiToken"
 
